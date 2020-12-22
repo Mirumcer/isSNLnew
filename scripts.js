@@ -5,4 +5,6 @@ window.addEventListener("load", function() {
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     var daysHTML = document.getElementById('days')
     daysHTML.innerText = diffDays
+    let description = document.getElementById("description")
+    description.content = diffDays + " days left"
 })
